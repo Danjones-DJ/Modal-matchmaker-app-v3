@@ -54,7 +54,7 @@ find_band <- function(grade) {
 ui <- page_navbar(
   
   # Title
-  title = "Learning Modals App",
+  title = "Degree Matchmaker VERSION 3.1.1",
   
   # Colour Scheme
   theme = bs_theme(
