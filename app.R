@@ -333,7 +333,7 @@ server <- function(input, output, session) {
         filter(title == input$open_modal$title, legal_name == input$open_modal$uni) |>
         mutate(Grades = factor(Grades, levels = grade_order)) |>
         ggplot(aes(x = Grades, y = Count, fill = Grades)) +
-        geom_col() +
+        geom_col(colour = "black", linewidth = 0.3) +
         coord_flip() +
         scale_fill_manual(values = my_cols) +
         theme_classic() +
